@@ -23,41 +23,41 @@
 // console.log(dog.dogName, " is a ", dog.breed, " and weighs ", dog.weight,
 //     "kg.");
 
-// class Person {
+class Person {
 
-//     //hash shows that it's private
-//     #firstname;
-//     #lastname;
+    //hash shows that it's private
+    #firstname; //private String firstname;
+    #lastname;
 
-//     constructor(firstname, lastname) {
-//         this.#firstname = firstname;
-//         this.#lastname = lastname;
-//     }
+    constructor(firstname, lastname) {
+        this.#firstname = firstname;
+        this.#lastname = lastname;
+    }
 
-//     get firstname() {
-//         return this.#firstname;
-//     }
+    get firstname() {           
+        return this.#firstname;
+    }
 
-//     set firstname(firstname) {
-//         this.#firstname = firstname;
-//     }
+    set firstname(firstname) {
+        this.#firstname = firstname;
+    }
 
-//     get lastname() {
-//         return this.#lastname;
-//     }
+    get lastname() {
+        return this.#lastname;
+    }
 
-//     set lastname(lastname) {
-//         this.#lastname = lastname;
-//     }
+    set lastname(lastname) {
+        this.#lastname = lastname;
+    }
 
-//     greet() {
-//         alert(`Hi there, I'm ${this.firstname} ${this.lastname}!`);
-//     }
+    greet() {
+        alert(`Hi there, I'm ${this.firstname} ${this.lastname}!`);
+    }
 
-//     compliment(name, object) {
-//         return "What lovely " + object + " you've got " + name;
-//     }
-// }
+    compliment(name, object) {
+        return "What lovely " + object + " you've got " + name;
+    }
+}
 
 // let p = new Person("Jada", "Mathele");
 // console.log(p.firstname);
