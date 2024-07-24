@@ -101,24 +101,38 @@
 // }
 
 /***************FORM SUBMISSION************ */
-function valForm() {
-    var p = event.target.children;
-    if (p.firstName.value == "") {
-        message("Need a first name!!");
-        return false;
-    }
-    if (p.lastName.value == "") {
-        message("Need a last name!!");
-        return false;
-    }
-    if (p.age.value == "") {
-        message("Need an age!!");
-        return false;
-    }
-    return true;
-}
-function message(m) {
-    document.getElementById("wrapper").innerHTML = m;
-}
+// function valForm() {
+//     var p = event.target.children;
+//     //condition makes all 3 fields required
+//     if (p.firstName.value == "") {
+//         message("Need a first name!!");
+//         return false;
+//     }
+//     if (p.lastName.value == "") {
+//         message("Need a last name!!");
+//         return false;
+//     }
+//     if (p.age.value == "") {
+//         message("Need an age!!");
+//         return false;
+//     }
+//     return true;
+// }
+// function message(m) {
+//     document.getElementById("wrapper").innerHTML = m;
+// }
 
-/***************FORM SUBMISSION************ */
+/***************ANIMATING ELEMENTS************ */
+function toTheRight() {
+    let b = document.getElementById("block");
+    let x = 0;
+    setInterval(function () {
+        if (x === 600) {
+            clearInterval();
+        } else {
+            x++;
+            b.style.left = x + "px";
+            console.log(`${x}px`);
+        }
+    }, 2);//2 seconds
+}
