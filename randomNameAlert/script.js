@@ -3,16 +3,24 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 30, value: 2 },
-  { minDegree: 31, maxDegree: 90, value: 1 },
-  { minDegree: 91, maxDegree: 150, value: 6 },
-  { minDegree: 151, maxDegree: 210, value: 5 },
-  { minDegree: 211, maxDegree: 270, value: 4 },
-  { minDegree: 271, maxDegree: 330, value: 3 },
-  { minDegree: 331, maxDegree: 360, value: 2 },
+  { minDegree: 0, maxDegree: 24, value: "Happy" },
+  { minDegree: 25, maxDegree: 48, value: "Sharon" },
+  { minDegree: 49, maxDegree: 72, value:  "Fortune"},
+  { minDegree: 73, maxDegree: 96, value: "Juan" },
+  { minDegree: 97, maxDegree: 120, value:  "Michael" },
+  { minDegree: 121, maxDegree: 144, value: "Alex" },
+  { minDegree: 145, maxDegree: 168, value: "Bhabha" },
+  { minDegree: 169, maxDegree: 192, value: "Asanda" },
+  { minDegree: 193, maxDegree: 216, value: "Thabo" },
+  { minDegree: 217, maxDegree: 240, value: "Sandile" },
+  { minDegree: 241, maxDegree: 264, value: "Sbahle" },
+  { minDegree: 265, maxDegree: 288, value: "Lucky" },
+  { minDegree: 289, maxDegree: 312, value: "Diego" },
+  { minDegree: 313, maxDegree: 336, value: "Boitumelo" },
+  { minDegree: 337, maxDegree: 360, value: "Vhukhudo" },
 ];
 //Size of each piece
-const data = [16, 16, 16, 16, 16, 16];
+const data = [6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4, 6.4];
 //background color for each piece
 var pieColors = [
   "#8b35bc",
@@ -30,7 +38,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: [1, 2, 3, 4, 5, 6],
+    labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     //Settings for dataset/pie
     datasets: [
       {
@@ -63,7 +71,7 @@ const valueGenerator = (angleValue) => {
   for (let i of rotationValues) {
     //if the angleValue is between min and max then display it
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-      finalValue.innerHTML = `<p>Value: ${i.value}</p>`;
+      finalValue.innerHTML = `<p>Presenter: ${i.value}</p>`;
       spinBtn.disabled = false;
       break;
     }
@@ -78,7 +86,7 @@ let resultValue = 101;
 spinBtn.addEventListener("click", () => {
   spinBtn.disabled = true;
   //Empty final value
-  finalValue.innerHTML = `<p>Good Luck!</p>`;
+  finalValue.innerHTML = `<p>Who will present?</p>`;
   //Generate random degrees to stop at
   let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
   //Interval for rotation animation
