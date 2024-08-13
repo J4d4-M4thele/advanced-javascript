@@ -1,6 +1,6 @@
 "use strict";
 
-// alert("Hey there, from a different file!!!");
+alert("Hey there, from a different file!!!");
 
 // let myStatus = "new";
 // let scared = true;
@@ -21,5 +21,5 @@
 // let feeling = prompt("Hi Jada, how are you doing?");
 // console.log(feeling);
 
-console.log(Math.random());
-console.log(Math.floor(Math.random() * 100));
+// console.log(Math.random());
+// console.log(Math.floor(Math.random() * 100));
