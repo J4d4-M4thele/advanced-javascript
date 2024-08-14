@@ -1,5 +1,20 @@
 "use strict";
 
+/****************VARIABLES*****************/
+// let firstName = "Jada";
+// console.log(firstName);
+// firstName = "Hazel";
+// console.log(firstName);
+
+// let nr1 = 12;
+// var nr2 = 8;
+
+// const PI = 3.14159;
+// console.log(PI);
+// PI = 3.14; //trows an error
+// console.log(PI);
+
+
 /*******************STRINGS************* */
 // let singleString = 'Hi there!';
 // let doubleString = "How are you?";
@@ -7,7 +22,7 @@
 // console.log(singleString);
 // console.log(doubleString);
 
-// let funActivity = "Let's learn JavaScript";
+// let funActivity = 'Let\'s learn JavaScript';
 // console.log(funActivity);
 
 // let language = "JavaScript";
@@ -27,14 +42,14 @@
 // console.log(str4);
 
 /*******************NUMBERS************* */
-//let intNr = 1;
+let intNr = 1;
 // let decNr = 1.5;
-// let expNr = 1.4e15;
+// let expNr = 1.4e15;//1.4 * 10^15
 // let octNr = 0o10; //decimal version would be 8
 // let hexNr = 0x3E8; //decimal version would be 1000
 // let binNr = 0b101; //decimal version would be 5
 
-//console.log(intNr);
+// console.log(intNr);
 // console.log(decNr);
 // console.log(expNr);
 // console.log(octNr);
@@ -79,10 +94,16 @@
 
 /*******************UNDEFINED AND NULL************* */
 // let terribleThingToDo = undefined;
-// let lastName;
+// let lastName;//when we don't specify a value the variable is undefined
 // console.log("Same undefined:", lastName === terribleThingToDo);
 // let betterOption = null;
 // console.log("Same null:", lastName === betterOption);
+
+// let firstName = null;
+// console.log(firstName);
+// firstName = "Jada";
+// console.log(firstName);
+
 
 /*************TYPE OF VARIABLES************ */
 // let str = "Hello";
@@ -129,6 +150,70 @@
 // console.log(`myNum (${myNum}) is a ${typeof (myNum)}`);
 
 /*******************OPERATORS**************** */
+//ADDITION
+// let nr1 = 12;
+// let nr2 = 14;
+// let result1 = nr1 + nr2;
+// console.log(result1);
+
+// let str1 = "Hello ";
+// let str2 = "addition";
+// let result2 = str1 + str2;
+// console.log(result2);
+
+
+//SUBTRACTION
+// let nr1 = 20;
+// let nr2 = 4;
+// let str1 = "Hi";
+// let nr3 = 3;
+// let result1 = nr1 - nr2;
+// let result2 = str1 - nr3;
+// console.log(result1, result2);
+
+//MULTIPLICATION
+// let nr1 = 15;
+// let nr2 = 10;
+// let str1 = "Hi";
+// let nr3 = 3;
+// let result1 = nr1 * nr2;
+// let result2 = str1 * nr3;
+// console.log(result1, result2);
+
+//DIVISION
+// let nr1 = 30;
+// let nr2 = 5;
+// let result1 = nr1 / nr2;
+// console.log(result1);
+
+//EXPONENTIATION
+// let nr1 = 2;
+// let nr2 = 3;
+// let result1 = nr1 ** nr2;
+// console.log(result1);
+
+//MODULUS
+// let nr1 = 10;
+// let nr2 = 3;
+// let result1 = nr1 % nr2;
+// console.log(`${nr1} % ${nr2} = ${result1}`);
+// let nr3 = 8;
+// let nr4 = 2;
+// let result2 = nr3 % nr4;
+// console.log(`${nr3} % ${nr4} = ${result2}`);
+// let nr5 = 15;
+// let nr6 = 4;
+// let result3 = nr5 % nr6;
+// console.log(`${nr5} % ${nr6} = ${result3}`);
+
+//UNARY OPERATORS
+// let nr1 = 4;
+// nr1++;
+// console.log(nr1);
+// let nr2 = 4;
+// nr2--;
+// console.log(nr2);
+
 //EXERCISE 2.2
 // let myName = "Jada";
 // let age = 19;
@@ -174,6 +259,12 @@
 // console.log(y < x);
 // console.log(x <= x);
 
+//EQUAL
+// let x = 5;
+// let y = "5";
+// console.log(x == y);
+// console.log(x === y);
+// console.log(x != y);
 /************AND(&&)********* */
 let x = 1;
 let y = 2;
