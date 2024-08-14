@@ -22,10 +22,10 @@
 // arr[0] = "new value";
 // console.log(arr[0]);
 
-//throws error because a value has been assigned in line 21
+// //throws error because a value has been assigned in line 21
 // arr = ["nope, now you are overwriting the array"];
 
-// let cars = ["Toyota", "Renault", "Volkswagen"];
+let cars = ["Toyota", "Renault", "Volkswagen"];
 // console.log(cars[0]);
 // console.log(cars[1]);
 // console.log(cars[2]);
@@ -70,7 +70,7 @@
 
 //SPLICE
 // let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
-// arrOfShapes.splice(2, 0, "square", "trapezoid");
+// arrOfShapes.splice(2, 1, "square", "trapezoid");
 // console.log(arrOfShapes);
 // arrOfShapes.unshift("oval");
 // arrOfShapes.unshift("hexagon");
@@ -99,7 +99,7 @@
 // colors.splice(0, 1);
 // console.log(colors);
 
-// let arr8 = [2, 6, 7, 8];
+let arr8 = [2, 6, 7, 8];
 // let findValue = arr8.find((e) =>  e === 6);//finds actual value not the value at a certain index
 // let findValue2 = arr8.find((e) => e === 10);
 // console.log(findValue, findValue2);
@@ -164,43 +164,48 @@
 
 // dog.age = "three";
 // let variable = "age";
-// console.log(dog[variable]);
+// console.log(dog[variable]);//dog["age"]
 
 // variable = "breed";
-// console.log(dog[variable]);
+// console.log(dog[variable]);//dog["breed"]
 
 // dog[variable] = "dachshund";
 // console.log(dog["breed"]);
 
 /**********************ARRAYS AND OBJECTS*************** */
+// let company = {
+//     companyName: "Healthy Candy",
+//     activity: "food manufacturing",
+//     address: {
+//         street: "2nd street",
+//         number: "123",
+//         zipcode: "33116",
+//         city: "Miami",
+//         state: "Florida"
+//     },
+//     yearOfEstablishment: 2021
+// };
+
+// console.log(company);
+
+
+// let company = {
+//     companyName: "Healthy Candy",
+//     activities: ["food manufacturing",
+//         "improving kids' health", "manufacturing toys"],
+//     address: {
+//         street: "2nd street",
+//         number: "123",
+//         zipcode: "33116",
+//         city: "Miami",
+//         state: "Florida"
+//     },
+//     yearOfEstablishment: 2021
+// };
+
+// console.log(company);
+
 let company = {
-    companyName: "Healthy Candy",
-    activity: "food manufacturing",
-    address: {
-        street: "2nd street",
-        number: "123",
-        zipcode: "33116",
-        city: "Miami",
-        state: "Florida"
-    },
-    yearOfEstablishment: 2021
-};
-
-company = {
-    companyName: "Healthy Candy",
-    activities: ["food manufacturing",
-        "improving kids' health", "manufacturing toys"],
-    address: {
-        street: "2nd street",
-        number: "123",
-        zipcode: "33116",
-        city: "Miami",
-        state: "Florida"
-    },
-    yearOfEstablishment: 2021
-};
-
-company = {
     companyName: "Healthy Candy",
     activities: ["food manufacturing",
         "improving kids' health",
@@ -221,7 +226,7 @@ company = {
     }],
     yearOfEstablishment: 2021
 };
-console.log(company);
+// console.log(company);
 
 let addresses = [{
     street: "2nd street",
