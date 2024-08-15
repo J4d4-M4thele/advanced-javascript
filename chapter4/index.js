@@ -1,6 +1,6 @@
 /****************IF...ELSE STATEMENTS************/
-// let rain = prompt("Is it raining today? ");
-// if (rain === "true") {
+// let rain = false;
+// if (rain) {
 //     console.log("** Taking my umbrella when I need to go outside **");
 // } else {
 //     console.log("** I can leave my umbrella at home **");
@@ -42,7 +42,7 @@
 // alert(access);
 
 /****************SWITCH STATEMENTS************/
-let activity = "Dinner";
+let activity = "Drive back home";
 
 //if statement
 // if (activity === "Get up") {
@@ -60,26 +60,45 @@ let activity = "Dinner";
 // }
 
 //switch statement
-switch (activity) {
-    case "Get up":
-        console.log("It is 6:30AM");
+// switch (activity) {
+//     case "Get up":
+//         console.log("It is 6:30AM");
+//         break;
+//     case "Breakfast":
+//         console.log("It is 7:00AM");
+//         break;
+//     case "Drive to work":
+//         console.log("It is 8:00AM");
+//         break;
+//     case "Lunch":
+//         console.log("It is 12:00PM");
+//         break;
+//     case "Drive home":
+//         console.log("It is 5:00PM");
+//         break;
+//     case "Dinner":
+//         console.log("It is 6:30PM");
+//         break;
+//     default:
+//         console.log("I cannot determine the current time");
+//         break;
+// }
+
+let grade = "E";
+
+switch (grade) {
+    case "F":
+    case "D":
+        console.log("You've failed!");
         break;
-    case "Breakfast":
-        console.log("It is 7:00AM");
+    case "C":
+    case "B":
+        console.log("You've passed!");
         break;
-    case "Drive to work":
-        console.log("It is 8:00AM");
-        break;
-    case "Lunch":
-        console.log("It is 12:00PM");
-        break;
-    case "Drive home":
-        console.log("It is 5:00PM");
-        break;
-    case "Dinner":
-        console.log("It is 6:30PM");
+    case "A":
+        console.log("Nice!");
         break;
     default:
-        console.log("I cannot determine the current time");
+        console.log("I don't know this grade.");
         break;
 }
