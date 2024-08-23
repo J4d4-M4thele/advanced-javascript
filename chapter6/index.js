@@ -4,6 +4,31 @@
 // }
 // sayHello();
 
+
+// 6.1
+
+// let num1 = 5;
+// let num2 = 10;
+
+// function add(x, y) {
+//     let result = x + y;
+//     console.log(`${x} + ${y} = ${result}`);
+// }
+
+// add(num1, num2);
+// add(2, 3);
+
+// 6.2
+// let wordArray = ["pleasant", "adorable", "meaningful", "interesting"];
+
+// function describe() {
+//     let name = prompt("What is your name?");
+//     let randomIndex = wordArray[Math.floor(Math.random() * wordArray.length)];
+//     console.log(`${name} is such a ${randomIndex} name.`)
+// }
+
+// describe();
+
 /*******************PARAMETERS*************** */
 // function tester(para1, para2) {
 //     return para1 + " " + para2;
@@ -19,9 +44,23 @@
 // addTwoNumbers(222, 444);//666
 // addTwoNumbers(3, 4);//7
 // addTwoNumbers(12,-90);//-78
-//12 + (-90);
-//12 - 90;
+// //12 + (-90);
+// //12 - 90;
 
+//6.3
+// let num1 = 5;
+// let num2 = 10;
+// let operator = "+";
+
+// function checkOperator(x, y) {
+//     if(operator === "-") {
+//         console.log(x - y);  
+//     }else {
+//         console.log(x + y);
+//     }
+// }
+// checkOperator(num1, num2);
+// checkOperator();
 /*******************DEFAULT PARAMETERS*************** */
 // function addTwoNumbers(x = 2, y = 3) {
 //     console.log(x + y);
@@ -36,6 +75,11 @@
 // }
 // doStuff("Hello world!");
 
+/*
+ARROW FUNCTION SYNTAX
+let funcName = (params) => {code body};
+*/
+
 // let doArrowStuff = x => console.log(x);
 // doArrowStuff("Great, it works!");
 
@@ -47,15 +91,14 @@
 
 /*******************SPREAD OPERATOR*************** */
 // let spread = ["so", "much", "fun"];
-// let message = ["JavaScript", "is", ...spread, "and", "very",
-// "powerful"];
+// let message = ["JavaScript", "is", ...spread, "and", "very", "powerful"];
 // console.log(message);
 
 // function addTwoNumbers(x, y) {
 //     console.log(x + y);
 // }
 // let arr = [5, 9];
-// addTwoNumbers(...arr);
+// addTwoNumbers(...arr);//addTwoNumbers(5, 9)
 
 // function addFourNumbers(x, y, z, a) {
 //     console.log(x + y + z + a);
@@ -96,8 +139,8 @@
 //     console.log("Available here:", x);
 // }
 // testAvailability("Hi!");
-//x called out of scope
-//console.log("Not available here:", x);//logs error
+// //x called out of scope
+// console.log("Not available here:", x);//logs error
 
 // function testAvailability() {
 //     let y = "Local variable!";
@@ -118,9 +161,9 @@
 /*******************LET VS VAR*************** */
 // function doingStuff() {
 //     if (true) {
-//         //var x = "local";
+//         var x = "local";
 //         // let x = "local";
-//         const x = "local";
+//         // const x = "local";
 //     }
 //     console.log(x);
 // }
@@ -190,11 +233,11 @@
 // doOuterFunctionStuff(2);
 
 /*******************ANONYMOUS FUNCTIONS*************** */
-// let functionVariable = function () {
-//     console.log("Not so secret though.");
-// };
+let functionVariable = function () {
+    console.log("Not so secret though.");
+};
 
-//functionVariable();
+// functionVariable();
 
 /*****************FUNCTION CALLBACKS***************** */
 // function doFlexibleStuff(executeStuff) {
@@ -203,6 +246,7 @@
 // }
 
 // doFlexibleStuff(functionVariable);
+// //executeStuff() = functionVariable();
 
 let youGotThis = function () {
     console.log("You're doing really well, keep coding!");

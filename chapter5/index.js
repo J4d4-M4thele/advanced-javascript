@@ -35,7 +35,7 @@
 // let number;
 
 // do {
-// number = prompt("Please enter a number between 0 and 100: ");
+// number = Number(prompt("Please enter a number between 0 and 100: "));
 // alert(`You chose the number: ${number}`)
 // } while (!(number >= 0 && number < 100));
 
@@ -44,6 +44,12 @@
 //     console.log(`i's value is now ${i}`);
 // }
 // console.log("We have broken out of the for loop");
+
+// let arr = [];
+// for (let i = 0; i < 100; i = i + 2) {
+// arr.push(i);
+// }
+// console.log(arr);
 
 /*******************NESTED LOOPS*************** */
 // let arrOfArrays = [];
@@ -57,10 +63,10 @@
 // console.table(arrOfArrays);
 
 /*******************FOR OF LOOPS*************** */
-//let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
-// for (let i = 0; i < names.length; i++) {
-//     console.log(names[i]);
-// }
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// // for (let i = 0; i < names.length; i++) {
+// //     console.log(names[i]);
+// // }
 
 // for (let name of names) {
 //     console.log(name);
@@ -87,6 +93,16 @@
 //     console.log(`The element in index ${arr.indexOf(e)}: ${e}`);
 // }
 
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair", "Mimi"];
+// for (let i = 0; i < names.length; i++) {
+//     if (names[i].startsWith("M")) {
+//         delete names[i];//removing Maxime
+//         continue;
+//     }
+//     names[i] = "hello " + names[i];
+// }
+// console.log(names);
+
 
 /*******************FOR IN LOOPS*************** */
 // let car = {
@@ -101,7 +117,7 @@
 // }
 
 // let carKeys = Object.keys(car);
-// console.log(carKeys);
+// console.log(carKeys);//prints properties in an array
 
 // for(let key of carKeys) {
 //     console.log(key);
@@ -117,7 +133,7 @@ let cars = [
         model: "Golf",
         make: "Volkswagen",
         year: 1999,
-        color: "black",
+        color: "silver",
     },
     {
         model: "Picanto",
@@ -135,7 +151,7 @@ let cars = [
         model: "Fiat",
         make: "Punto",
         year: 2020,
-        color: "black",
+        color: "blue",
     }
 ];
 
@@ -166,21 +182,21 @@ let groups = [
     ["Helen", "Jonah", "Sambikos"],
 ];
 
-for (let i = 0; i < groups.length; i++) {
-    let matches = 0;
-    for (let j = 0; j < groups[i].length; j++) {
-        if (groups[i][j].startsWith("M")) {
-            matches++;
-        } else {
-            continue;
-        }
-        if (matches === 2) {
-            console.log("Found a group with two names starting with an M:");
-            console.log(groups[i]);
-            break;
-        }
-    }
-}
+// for (let i = 0; i < groups.length; i++) {
+//     let matches = 0;
+//     for (let j = 0; j < groups[i].length; j++) {
+//         if (groups[i][j].startsWith("M")) {
+//             matches++;
+//         } else {
+//             continue;
+//         }
+//         if (matches === 2) {
+//             console.log("Found a group with two names starting with an M:");
+//             console.log(groups[i]);
+//             break;
+//         }
+//     }
+// }
 
 outer:
 for (let group of groups) {
