@@ -2,7 +2,7 @@
 
 /****************GLOBAL METHODS********** */
 //ENCODING AND DECODING URIs
-let uri = "https://www.example.com/submit?name=maaike van putten";
+// let uri = "https://www.example.com/submit?name=maaike van putten";
 // let encoded_uri = encodeURI(uri);
 // console.log("Encoded:", encoded_uri);
 // let decoded_uri = decodeURI(encoded_uri);
@@ -22,7 +22,9 @@ let uri = "https://www.example.com/submit?name=maaike van putten";
 // let str_nan = "hello!";
 // let int_nan = parseInt(str_nan);
 // console.log("Type of", int_nan, "is", typeof int_nan);
+// console.log("Type of", str_nan, "is", typeof str_nan);
 
+//PARSING NUMBERS (PARSEFLOAT())
 // let str_float = "7.6";
 // let float_float = parseFloat(str_float);
 // console.log("Type of", float_float, "is", typeof float_float);
@@ -48,9 +50,9 @@ let uri = "https://www.example.com/submit?name=maaike van putten";
 // console.log("Printing stuff: ", element, " on array position: ", index);
 // }
 // arr.forEach(printStuff);
-/*
-arr.foreach((e, i) => {console.log("Printing stuff: ", element, " on array position: ", index)});
-*/
+
+// arr.forEach((e, i) => {console.log("Printing stuff: ", e, " on array position: ", i)});
+
 
 //FILTERING ARRAYS
 // let arr = ["squirrel", 5, "Tjed", new Date(), true];
@@ -66,9 +68,9 @@ arr.foreach((e, i) => {console.log("Printing stuff: ", element, " on array posit
 
 //REPLACING ARRAY ELEMENTS
 // let arr = ["grapefruit", 4, "hello", 5.6, true];
-// console.log(`Original array: ${arr}`);
+// console.log("Original array: " + arr);
 // arr.copyWithin(0, 3);
-// console.log(`New array: ${arr}`);
+// console.log("New array: " + arr);
 
 //0: replacing grapefruit and 4 - coz we are copying 2 elements
 //3: copying from index 3 - 5.6 is the value
@@ -85,6 +87,13 @@ arr.foreach((e, i) => {console.log("Printing stuff: ", element, " on array posit
 // let bb = ["so", "bye", "bye", "love"];
 // console.log(bb.lastIndexOf("bye"));
 // console.log(bb.lastIndexOf("hi"));
+
+// const arr = ["Laurence", "Mike", "Larry", "Kim", "Joanne", "Laurence", "Mike", "Laurence", "Mike", "Laurence", "Mike"];
+// const arr2 = arr.filter((value, index, array) => {
+//     console.log(value, index, array.indexOf(value));
+//     return array.indexOf(value) === index;
+// });
+// console.log(arr2);
 
 /****************STRING METHODS********** */
 //COMBINING STRINGS
@@ -111,7 +120,7 @@ arr.foreach((e, i) => {console.log("Printing stuff: ", element, " on array posit
 // console.log(x);
 
 //INDEXES
-let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
+// let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 // let index_re = poem.indexOf("re");
 // console.log(index_re);
 
@@ -135,7 +144,7 @@ let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 //SUBSTRINGS
 // let str = "Create a substring";
 // let substr1 = str.slice(5);
-// let substr2 = str.slice(0,3);
+// let substr2 = str.slice(0,6);
 // console.log("1:", substr1);
 // console.log("2:", substr2);
 
@@ -192,6 +201,7 @@ let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 
 //SPECIFYING DECIMAL PLACES
 // let x = 1.23456;
+// //toFixed rounds up (when next decimal is 5 - 9)
 // let newX = x.toFixed(2);//2 decimal places
 // console.log(newX);
 
@@ -210,7 +220,9 @@ let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 // let result = Math.sqrt(121);
 // console.log(result);
 
+// //pow(base, exponent)
 // let result2 = Math.pow(5, 3);// 5 * 5 * 5
+// //5 ** 3;
 // console.log(result2);
 
 // ROUND - rounds to nearest integer
@@ -219,7 +231,7 @@ let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 // console.log("X:", x, "becomes", Math.round(x));
 // console.log("Y:", y, "becomes", Math.round(y));
 
-//CEIL - removes decimals
+//CEIL - removes decimals/ rounds up
 // let negativeX = -x;
 // let negativeY = -y;
 // console.log("negativeX:", negativeX, "becomes", Math.ceil(negativeX));
@@ -232,11 +244,11 @@ let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 // console.log("negativeX:", negativeX, "becomes", Math.floor(negativeX));
 // console.log("negativeY:", negativeY, "becomes", Math.floor(negativeY));
 
-//TRUNC - removes decimal places
+//TRUNC - removes decimal places (displays integer)
 // console.log("X:", x, "becomes", Math.trunc(x));
 // console.log("Y:", y, "becomes", Math.trunc(y));
-// console.log("X:", x, "becomes", Math.trunc(x));
-// console.log("Y:", y, "becomes", Math.trunc(y));
+// console.log("X:", negativeX, "becomes", Math.trunc(negativeX));
+// console.log("Y:", negativeY, "becomes", Math.trunc(negativeY));
 
 //EXPONENTS AND LOGARITHM
 // let x = 2;
@@ -262,7 +274,7 @@ let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
 // console.log(specificDate);
 
 let d = new Date();
-console.log(d);
+// console.log(d);
 // console.log("Day of week:", d.getDay());
 // console.log("Day of month:", d.getDate());
 // console.log("Month:", d.getMonth());
@@ -292,3 +304,31 @@ console.log(d);
 
 // console.log(d.toDateString());
 // console.log(d.toLocaleDateString());
+
+//8.7
+
+let bDate = new Date(2004, 7, 11);
+console.log(bDate);
+
+let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+
+let day = bDate.getDate();
+let month = bDate.getMonth();
+let year = bDate.getFullYear();
+
+let stringMonth = months[month];
+console.log(`${day} ${stringMonth} ${year}`);
+
