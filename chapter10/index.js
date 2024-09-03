@@ -1,6 +1,6 @@
 "use strict";
 
-//MOVING DOWN DOM TREE
+//**********MOVING DOWN DOM TREE***************/
 // console.dir(document.body);
 // console.dir(document.body.children.forest.children.tree2.children.shrubbery.children.treasure);
 // console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1]);
@@ -26,10 +26,12 @@
 
 // //BY TAG NAME
 // let tags = document.getElementsByTagName("div");
-// console.log(tags);
+// console.log(tags); 
 // let tag3 = document.getElementsByTagName("div").item(2);
 // console.log(tag3);
 
+// let head = document.getElementsByTagName("h1");
+// console.log(head); 
 // let heading = document.getElementsByTagName("h1");
 // console.log(heading);
 
@@ -104,11 +106,10 @@
 //     el.setAttribute("id", "new");
 //     el.setAttribute("class", "circle");
 // }
-// 
+
 /***************EVENTS************/
 // window.onload = function () {
-//     document.getElementById("square").addEventListener("click",
-//         changeColor);
+//     document.getElementById("square").addEventListener("click", changeColor);
 // }
 // function changeColor() {
 //     let red = Math.floor(Math.random() * 256);
@@ -118,8 +119,8 @@
 // }
 
 /***************CREATING ELEMENTS************/
-function addRandomNumber() {
-    let el = document.createElement("p");
-    el.innerText = Math.floor(Math.random() * 100);//NUMBER BETWEEN 0  AND 100
-    document.body.appendChild(el);
-}
+// function addRandomNumber() {
+//     let el = document.createElement("p");
+//     el.innerText = Math.floor(Math.random() * 100);//NUMBER BETWEEN 0  AND 100
+//     document.body.appendChild(el);
+// }
