@@ -102,7 +102,7 @@
 
 /***************FORM SUBMISSION************ */
 // function valForm() {
-//     var p = event.target.children;
+//     let p = event.target.children;
 //     //condition makes all 3 fields required
 //     if (p.firstName.value == "") {
 //         message("Need a first name!!");
