@@ -12,24 +12,24 @@
 // let text = "d";
 // console.log(text.match(/[a-d]/));
 
-// let text = "T";
-// console.log(text.match(/[a-zA-Z]/));//lowercase and uppercase letter matches
+// let text2 = "T";
+// console.log(text2.match(/[a-zA-Z]/));//lowercase and uppercase letter matches
 
-// let text = "äé!";
-// console.log(text.match(/[a-zA-Z0-9]/));
+// let text3 = "äé!";
+// console.log(text3.match(/[a-zA-Z0-9]/));
 
-// let text = "Just some text.";
-// console.log(text.match(/./g));//anything can match
-// console.log(text.match(/\./g));//fullstop
+// let text4 = "Just some text.";
+// console.log(text4.match(/./g));//anything can match
+// console.log(text4.match(/\./g));//fullstop
 
-// let text = "I'm 29 years old.";
-// console.log(text.match(/\d/g));//any digits
+// let text5 = "I'm 29 years old.";
+// console.log(text5.match(/\d/g));//any digits
 
-// let text = "Coding is a lot of fun!";
-// console.log(text.match(/\s/g));//whitespace
+// let text6 = "Coding is a lot of fun!";
+// console.log(text6.match(/\s/g));//whitespace
 
-// let text = "In the end or at the beginning?";
-// console.log(text.match(/\bin/gi));//match text at beginning of string
+// let text7 = "In the end or at the beginning?";
+// console.log(text7.match(/\bin/gi));//match text at beginning of string
 
 // let nr = 357;
 // //can't use .match() on numbers
@@ -39,27 +39,27 @@
 // let text = "I love JavaScript!";
 // console.log(text.match(/(love|dislike)\s(javascript|spiders)/gi));
 
-// let text = "I love JavaScript!";
-// console.log(text.match(/[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]/g));
+// let text2 = "I love JavaScript!";
+// console.log(text2.match(/[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]/g));
 
-//let text = "You are doing great!";
-//either 'ng' or 'g'
-// console.log(text.match(/n?g/gi));//n is optional (indicated by ?)
+// let text3 = "You are doing great!";
+// //either 'ng' or 'g'
+// console.log(text3.match(/n?g/gi));//n is optional (indicated by ?)
 
-// let text = "123123123";
-// let text2 = "123123123a";
-// //+ allows for repitition
-// console.log(text.match(/(123)+/));
+// let text4 = "123123123";
+// let text5 = "123123123a";
+// //+ allows for repetition
+// console.log(text4.match(/(123)+/));
 // //*a finds any mathes where a precedes 123
-// console.log(text2.match(/(123)*a/));
+// console.log(text5.match(/(123)*a/));
 
-// let text = "abcabcabc";
-// //reitition can be specified {min, max}
-// console.log(text.match(/(abc){1,2}/));
+// let text6 = "abcabcabc";
+// //repetition can be specified {min, max}
+// console.log(text6.match(/(abc){1,2}/));
 
-// let text = "I love JavaScript!";
+// let text7 = "I love JavaScript!";
 // //<group name> specifies groups
-// console.log(text.match(/(?<language>javascript)/i));
+// console.log(text7.match(/(?<language>javascript)/i));
 
 //REPLACING AND SEARCHING STRINGS
 // let text = "That's not the case.";
@@ -82,7 +82,7 @@
 /*******************FUNCTIONS AND ARGUMENTS OBJECT******************** */
 // function test(a, b, c) {
 //     //first call the parameters value
-//     //then caling the element of the arguments array
+//     //then calling the element of the arguments array
 //     console.log("first:", a, arguments[0]);
 //     console.log("second:", b, arguments[1]);
 //     console.log("third:", c, arguments[2]);
@@ -106,6 +106,10 @@
 // x = 5;
 // console.log(x);
 
+// x = 5;
+// console.log(x);
+// var x;
+// let x;
 /*******************STRICT MODE******************** */
 // function sayHi() {
 //     let greeting = "Hello!";
@@ -157,7 +161,7 @@
 //             c = c.trim();
 //         }
 //         if (c.startsWith(key)) {
-//             console.log("hi" + c);
+//             console.log("hi " + c);
 //             return c.substring(key.length + 1, c.length);
 //         }
 //     }
@@ -215,12 +219,12 @@
 // }
 
 //PARSING
-// let str = "{\"name\": \"Jada\", \"age\": 19}";
+// let str = "{\"name\": \"Jada\", \"age\": 20}";
 // let obj = JSON.parse(str);
 // /*
 // {
 //     "name": "Jada",
-//     "age": 19
+//     "age": 20
 // }
 // */
 // console.log(obj.name, " is ", obj.age, " years old.");

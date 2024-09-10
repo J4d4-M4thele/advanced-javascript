@@ -19,6 +19,7 @@
 //             console.log("An", grade, "! What?!");
 //     }
 // }
+// // judge("D");
 // function getGrade(score, callback) {
 //     let grade;
 //     switch (true) {
@@ -58,9 +59,10 @@
 // let promise = new Promise(function (resolve, reject) {
 //     // do something that might take a while
 //     // let's just set x instead for this example
-//     let x = 20;
+//     let x = Number(prompt("Provide any value: "));
 //     if (x > 10) {
 //         resolve(x); // on success
+//         // alert(x);
 //     } else {
 //         reject("Too low"); // on error
 //     }
@@ -143,11 +145,13 @@
 // talk(2);
 // talk(4);
 // talk(8);
+// talk("new")
 
 /******************EVENT LOOP******************/
 //CALL STACK AND CALLBACK QUEUE
 console.log("Hi there");
-setTimeout(() => console.log("Sorry I'm late"), 1000);
+console.log("Sorry I'm late")
+// setTimeout(() => console.log("Sorry I'm late"), 1000);
 console.log(add(4, 5));
 function add(x, y) {
     return x + y;
